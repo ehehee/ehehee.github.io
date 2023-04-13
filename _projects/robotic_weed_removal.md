@@ -5,7 +5,33 @@ description: We introduce our progress of complicated weed detection, sparying b
 img: assets/img/Robotics_weed_removal.png
 importance: 1
 category: work
+years: [2023, 2022, 2021]
 ---
+## __Stage 1: Perception__
+### __Nutsedge Detection__
+The dataset can be found in this [webpage](http://telerobot.cs.tamu.edu/weed-detection/)
+
+---
+## __Stage 2: Planning and Full System__
+
+### __Weed Sprayer__
+
+
+
+### __Weed Flamer__
+
+
+
+---
+
+{: #publications}
+## __Publications__
+
+<div class="publications">
+{% for y in page.years %}
+  {% bibliography -f weed_paper_list -q @*[year={{y}}]* %}
+{% endfor %}
+</div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
