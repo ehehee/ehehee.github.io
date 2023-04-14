@@ -37,11 +37,6 @@
     
     <!-- Dark Mode -->
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
-
-    <script src="/assets/js/theme.js"></script>
-    <script src="/assets/js/dark_mode.js"></script>
-    
 
   </head>
 
@@ -79,14 +74,6 @@
               <li class="nav-item active">
                 <a class="nav-link" href="/publications/">publications<span class="sr-only">(current)</span></a>
               </li>
-
-              <!-- Toogle theme mode -->
-              <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
-                </button>
-              </li>
             </ul>
           </div>
         </div>
@@ -114,7 +101,60 @@
           <article>
             <!-- _pages/publications.md -->
 <div class="publications">
-  <ol class="bibliography"></ol>
+  <ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-3 preview">
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/Dimenet-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/Dimenet-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/Dimenet-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/Dimenet.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="Dimenet.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="yeh2023dimenet" class="col-sm-9">
+        <!-- Title -->
+        <div class="title">DIME-Net: Neural Network-Based Dynamic Intrinsic Parameter Rectification for Cameras with Optical Image Stabilization System</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Shu-Hao Yeh, Shuangyu Xie, Di Wang, Wei Yan, and Dezhen Song</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-arxiv-id="2303.11307"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li></ol>
 
   <ol class="bibliography"><li>
 <!-- _layouts/bib.html -->
