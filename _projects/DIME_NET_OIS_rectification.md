@@ -1,6 +1,6 @@
 ---
 layout: page
-title: DIME NET (OIS rectification)
+title: DIME NET (Camera OIS rectification)
 description: A neural network-based approach that estimates camera intrisic matrix in real time so that pose estimation or scene reconstruction can be run at camera native resolution for the highest accuracy on the mobile devices.
 img: assets/img/OIS.png
 importance: 2
