@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Robotics Weed Removal | Shuangyu  Xie</title>
+    <title>Robotic Weed Removal | Shuangyu  Xie</title>
     <meta name="author" content="Shuangyu  Xie">
-    <meta name="description" content="We introduce our progress of complicated weed detection, sparying based weeding robots and active perception guided field navigation using boston dynamics quadrupedal robot SPOT mini with arm system.">
+    <meta name="description" content="Weed detection, sparying based weeding robots and active perception guided manipulation.">
 
 
     <!-- Bootstrap & MDB -->
@@ -93,8 +93,8 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Robotics Weed Removal</h1>
-            <p class="post-description">We introduce our progress of complicated weed detection, sparying based weeding robots and active perception guided field navigation using boston dynamics quadrupedal robot SPOT mini with arm system.</p>
+            <h1 class="post-title">Robotic Weed Removal</h1>
+            <p class="post-description">Weed detection, sparying based weeding robots and active perception guided manipulation.</p>
           </header>
 
           <article>
@@ -188,21 +188,42 @@
     Tri-layer weed Representation construction from the weed detection and spray planning
 </div>
 
-<h3 id="weed-flamer"><strong>Weed Flamer</strong></h3>
+<h3 id="weed-flamer-and-coupled-active-perception-and-manipulationcapm-algorithm"><strong>Weed Flamer and Coupled Active Perception and Manipulation(CAPM) Algorithm</strong></h3>
+
+<h4 id="weed-flamer-hardware--software-system">Weed Flamer Hardware &amp; Software System</h4>
 
 <div class="row">
+<div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
         <figure>
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/spot_system_pipeline_2-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/spot_system_pipeline_2-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/spot_system_pipeline_2-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/flamer_robot_platform-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/flamer_robot_platform-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/flamer_robot_platform-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/spot_system_pipeline_2.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/flamer_robot_platform.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/flamer_software_system-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/flamer_software_system-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/flamer_software_system-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/flamer_software_system.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -210,10 +231,37 @@
 
     </div>
 </div>
-<div class="caption">
-    System Design Diagram for Spot Weed Flamer
 </div>
+<p>Robotic weed flaming provides an environmentally friendly approach to removing weeds in the agricultural field. Here we present a robotic weed-flaming solution using a 6 degrees of freedom (DoF) manipulator mounted on a quadrupedal robot. The mobile manipulator system includes overall design, hardware integration, and software pipeline. We propose a flame model with an estimation method that uses a center-arc curve with a Gaussian cross-section model to describe the flame coverage in real time.<br>
+The experiments have demonstrated the working system and shown that our model and algorithm can achieve a mean average precision (mAP) of more than 76% in the reprojected images during online prediction.
+<!-- <div class="caption">
+    System Design Diagram for Spot Weed Flamer
+</div> --></p>
 
+<h4 id="capm-algorithm">CAPM Algorithm</h4>
+<div class="row">
+    <div class="col-sm mt-6 mt-md-0">
+            <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/capm-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/capm-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/capm-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/capm.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<p>A mobile manipulator often finds itself in an application where it needs to take a close-up view before performing a manipulation task. Named this as a coupled active perception and manipulation (CAPM) problem, we model the uncertainty in the perception process and devise a key state/task planning approach that considers reachability conditions as task constraints of both perception and manipulation tasks for the mobile platform. By minimizing the expected energy usage in the body key state planning while satisfying task constraints, our algorithm achieves the best balance between the task success rate and energy usage. We have implemented the algorithm and tested it in both simulation and physical experiments. The results have confirmed that our algorithm has a lower energy consumption compared to a two-stage decoupled approach, while still maintaining a success rate of 100% for the task.</p>
+
+<h4 id="experiment">Experiment</h4>
 <p align="center">
 <img src="/assets/img/Weed_experiment_4x.gif">
 </p>
@@ -223,7 +271,8 @@
 
 <div class="publications">
 
-  <ol class="bibliography"><li>
+  <ol class="bibliography">
+<li>
 <!-- _layouts/bib.html -->
       <div class="row">
         <div class="col-sm-3 preview">
@@ -231,13 +280,13 @@
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/weed_flamer-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/weed_flamer-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/weed_flamer-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/capm-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/capm-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/capm-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/weed_flamer.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="weed_flamer.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/capm.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="capm.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -245,21 +294,21 @@
 </div>
 
         <!-- Entry bib key -->
-        <div id="2023_weed_flamer" class="col-sm-9">
+        <div id="syxie_capm" class="col-sm-9">
         <!-- Title -->
-        <div class="title">Active Preception Guided Weed Flamer Using Quadruped Robot</div>
+        <div class="title">Coupled Active Perception and Manipulation Planning for a Mobile Manipulator in Precision Agriculture Applications</div>
         <!-- Author -->
+
         <div class="author">
-          
         
 
-        Chengsong Hu, Shuangyu Xie, Wang Di, Yingtao Jiang, Joe Johnson, Hojun Ji, Muthukumar Bagavathiannan, and Dezhen Song</div>
+        <em>Shuangyu Xie</em>, Chengsong Hu, Di Wang, Joe Johnson, Muthukumar Bagavathiannan, and Dezhen Song</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>TBD</em>, 2023
+          <em>ICRA 2023 (Submitted), arXiv preprint arXiv:2309.16778</em>, 2023
         </div>
         <div class="periodical">
           
@@ -277,7 +326,63 @@
           
         </div>
       </div>
-</li></ol>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-3 preview">
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/flamer_robot_platform-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/flamer_robot_platform-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/flamer_robot_platform-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/flamer_robot_platform.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="flamer_robot_platform.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="di_flaming" class="col-sm-9">
+        <!-- Title -->
+        <div class="title">System and Algorithm for Robotic Weed Flaming Using a Quadruped Robot and a 6-Axis Manipulator</div>
+        <!-- Author -->
+
+        <div class="author">
+        
+
+        Di Wang, Chengsong Hu, <em>Shuangyu Xie</em>, Joe Johnson, Hojun Ji, Yingtao Jiang, Muthukumar Bagavathiannan, and Dezhen Song</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>ICRA 2023 (Submitted)</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+</ol>
 
   <ol class="bibliography"><li>
 <!-- _layouts/bib.html -->
@@ -305,11 +410,11 @@
         <!-- Title -->
         <div class="title">Algorithm and System Development for Robotic Micro-Volume Herbicide Spray Towards Precision Weed Management</div>
         <!-- Author -->
+
         <div class="author">
-          
         
 
-        Chengsong Hu, Shuangyu Xie, Dezhen Song, J. Alex Thomasson, Robert G. Hardin IV, and Muthukumar Bagavathiannan</div>
+        Chengsong Hu, <em>Shuangyu Xie</em>, Dezhen Song, J. Alex Thomasson, Robert G. Hardin IV, and Muthukumar Bagavathiannan</div>
 
         <!-- Journal/Book title and date -->
         
@@ -361,11 +466,11 @@
         <!-- Title -->
         <div class="title">Toward Robotic Weed Control: Detection of Nutsedge Weed in Bermudagrass Turf Using Inaccurate and Insufficient Training Data</div>
         <!-- Author -->
+
         <div class="author">
-          
         
 
-        Shuangyu Xie, Chengsong Hu, Muthukumar Bagavathiannan, and Dezhen Song</div>
+        <em>Shuangyu Xie</em>, Chengsong Hu, Muthukumar Bagavathiannan, and Dezhen Song</div>
 
         <!-- Journal/Book title and date -->
         
