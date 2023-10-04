@@ -268,7 +268,7 @@ display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will
 scholar:
 
   last_name: [Xie]
-  first_name: [Shuangyu Xie]
+  first_name: [Shuangyu]
 
   style: apa
   locale: en

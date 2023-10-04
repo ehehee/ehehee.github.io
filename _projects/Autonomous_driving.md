@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Autonomous Driving
-description: Development towards autodrive challenge
+description: System and algorithm development towards SAE/GM autodrive challenge.
 img: assets/img/AUTODRIVE_23_3367.jpeg
 importance: 2
 category: work

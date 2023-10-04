@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Robotics Weed Removal
-description: We introduce our progress of complicated weed detection, sparying based weeding robots and active perception guided field navigation using boston dynamics quadrupedal robot SPOT mini with arm system. 
+title: Robotic Weed Removal
+description:  Weed detection, sparying based weeding robots and active perception guided manipulation. 
 img: assets/img/Robotics_weed_removal.png
 importance: 1
 category: work
@@ -55,20 +55,37 @@ Weed competition is one of the most limiting factors affecting crop yield and pr
     Tri-layer weed Representation construction from the weed detection and spray planning
 </div>
 
-### __Weed Flamer__
+### __Weed Flamer and Coupled Active Perception and Manipulation(CAPM) Algorithm__
 
-
-
+#### Weed Flamer Hardware & Software System
 
 <div class="row">
+<div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/spot_system_pipeline_2.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/flamer_robot_platform.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/flamer_software_system.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    System Design Diagram for Spot Weed Flamer
 </div>
+Robotic weed flaming provides an environmentally friendly approach to removing weeds in the agricultural field. Here we present a robotic weed-flaming solution using a 6 degrees of freedom (DoF) manipulator mounted on a quadrupedal robot. The mobile manipulator system includes overall design, hardware integration, and software pipeline. We propose a flame model with an estimation method that uses a center-arc curve with a Gaussian cross-section model to describe the flame coverage in real time.  
+The experiments have demonstrated the working system and shown that our model and algorithm can achieve a mean average precision (mAP) of more than 76% in the reprojected images during online prediction.
+<!-- <div class="caption">
+    System Design Diagram for Spot Weed Flamer
+</div> -->
 
+
+#### CAPM Algorithm
+<div class="row">
+    <div class="col-sm mt-6 mt-md-0">
+            {% include figure.html path="assets/img/capm.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+A mobile manipulator often finds itself in an application where it needs to take a close-up view before performing a manipulation task. Named this as a coupled active perception and manipulation (CAPM) problem, we model the uncertainty in the perception process and devise a key state/task planning approach that considers reachability conditions as task constraints of both perception and manipulation tasks for the mobile platform. By minimizing the expected energy usage in the body key state planning while satisfying task constraints, our algorithm achieves the best balance between the task success rate and energy usage. We have implemented the algorithm and tested it in both simulation and physical experiments. The results have confirmed that our algorithm has a lower energy consumption compared to a two-stage decoupled approach, while still maintaining a success rate of 100% for the task.     
+
+
+#### Experiment
 <p align="center">
 <img src="{{ 'assets/img/Weed_experiment_4x.gif' | relative_url}}" />
 </p>

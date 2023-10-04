@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Research projects in robotic weed removel, autonomous driving and augmented reality.
 nav: true
 nav_order: 1
 display_categories: [work]

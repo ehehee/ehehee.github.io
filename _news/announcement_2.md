@@ -6,7 +6,7 @@ inline: true
 related_posts: false
 ---
 
-We won [GM/SAE Autodrive Challenge](https://www.sae.org/attend/student-events/autodrive-challenge-series2) First Place (year 2)! :sparkles: :smile:   [More infomation about our team.](http://autodrive.tamu.edu/)
+We won [GM/SAE Autodrive Challenge](https://online.flippingbook.com/view/618261871/34/) First Place (year 2)! :sparkles: :smile:   [More infomation about our team.](http://autodrive.tamu.edu/)
 
 <!-- ***
 
