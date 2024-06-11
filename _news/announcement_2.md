@@ -1,12 +1,11 @@
 ---
 layout: post
-title: We won GM/SAE Autodriv Challenge First Place!
-date: 2023-07-24
+date: 2024-01-30
 inline: true
 related_posts: false
 ---
 
-We won [GM/SAE Autodrive Challenge](https://online.flippingbook.com/view/618261871/34/) First Place (year 2)! :sparkles: :smile:   [More infomation about our team.](http://autodrive.tamu.edu/)
+Our new work on mobile manipulator planning for precison argiculture is accepted by ICRA 2024: [Coupled Active Perception and Manipulation Planning for a Mobile Manipulator in Precision Agriculture Applications](https://arxiv.org/abs/2309.16778)
 
 <!-- ***
 

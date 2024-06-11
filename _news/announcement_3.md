@@ -1,15 +1,9 @@
 ---
 layout: post
-date: 2023-04-14 
-title: Present Poster 'Robotic Weed Removal' for 2023 Texas Robotics Symposium
-inline: false
+title: We won GM/SAE Autodriv Challenge First Place!
+date: 2023-07-24
+inline: true
 related_posts: false
 ---
 
-Poster for [2023 Texas Robotics Symposium](https://teros-texas.github.io/)
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Poster-robotic-weed-removal.bmp" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+We won [GM/SAE Autodrive Challenge](https://online.flippingbook.com/view/618261871/34/) First Place (year 2)! :sparkles: :smile:   [More infomation about our team.](http://autodrive.tamu.edu/)
