@@ -11,7 +11,7 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8  
 
 # add ruby and jekyll
-RUN apt-get install --no-install-recommends ruby-full build-essential zlib1g-dev -y 
+RUN apt-get install --no-install-recommends ruby-full build-essential zlib1g-dev inotify-tools -y 
 RUN apt-get install imagemagick -y 
 RUN apt-get clean \
     && rm -rf /var/lib/apt/lists/
@@ -22,3 +22,9 @@ RUN mkdir /srv/jekyll
 ADD Gemfile /srv/jekyll
 WORKDIR /srv/jekyll
 RUN bundle install
+EXPOSE 8080
+
+COPY bin/entry_point.sh /tmp/entry_point.sh
+RUN chmod +x /tmp/entry_point.sh
+
+CMD ["/tmp/entry_point.sh"]
