@@ -5,7 +5,13 @@ inline: true
 related_posts: false
 ---
 
-Our new work on mobile manipulator planning for precison argiculture is accepted by ICRA 2024: [Coupled Active Perception and Manipulation Planning for a Mobile Manipulator in Precision Agriculture Applications](https://arxiv.org/abs/2309.16778)
+🎉 **Two papers accepted by ICRA 2025** 🚀
+
+**[Energy Efficient Planning for Repetitive Heterogeneous Tasks in Precision Agriculture](https://arxiv.org/pdf/2504.03938)** and **[Heterogeneous Sensor Fusion and Active Perception for Transparent Object Reconstruction with a PDM² Sensor and a Camera](https://ieeexplore.ieee.org/abstract/document/11128748)**
+
+Thank you for the contributions from all collaborators! 🙏
+
+
 
 <!-- ***
 

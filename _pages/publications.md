@@ -12,7 +12,9 @@ nav_order: 1
 
 <div class="publications">
 
+<p><small>* indicates co-first author</small></p>
 {% bibliography -f {{ site.scholar.bibliography }} %}
+
 
 
 </div>

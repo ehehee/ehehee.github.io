@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-We won [GM/SAE Autodrive Challenge](https://online.flippingbook.com/view/618261871/34/) First Place (year 2)! :sparkles: :smile:   [More infomation about our team.](http://autodrive.tamu.edu/)
+🔥We released MapBench, the first dataset specifically designed for human-readable, pixel-based map-based outdoor navigation, curated from complex path finding scenarios. Explore [our paper](https://arxiv.org/abs/2503.14607) for more details.

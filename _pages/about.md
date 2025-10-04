@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. student @ TAMU 
+subtitle: PostDoc @ UCB, Ph.D. @ TAMU 
 
 profile:
   align: right
@@ -20,5 +20,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 I am a Postdoctoral researcher in the [AUTOLab](https://autolab.berkeley.edu/) at UC Berkeley, working with [Prof. Ken Goldberg](https://goldberg.berkeley.edu/). Prior to joining UC Berkeley, I obtained my Ph.D. and M.S. degree from Texas A&M University, advised by [Prof. Dezhen Song](https://people.engr.tamu.edu/dzsong/index.html).
 
 
-My research interests encompass both theoretical and applied aspects of robotics, including active perception, dynamic scene understanding in structured and unstructured outdoor environments with uncertainties, as well as 3D scene understanding and reconstruction. Currently, my work focuses on developing probabilistic dynamic scene representations in sensor space and designing active perception-guided planning algorithms for mobile manipulators and agricultural robots.
+I design algorithmic frameworks that help robots move from theory to the real world—where uncertainty, complexity, and noise are the norm. My research aims to make robots more capable and resilient in unstructured environments, spanning applications in manipulation, outdoor navigation, and mobile manipulation. Recently, I’ve been exploring how task and motion planning, Vision-Language Models (VLMs), and 3D/4D reconstruction can come together to enable robots to perceive, reason, and act with greater autonomy—whether it’s grasping objects, navigating dynamic spaces, or modeling plants in natural settings.
+
 
