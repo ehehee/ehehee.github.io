@@ -65,6 +65,10 @@
                 <a class="nav-link" href="/">about<span class="sr-only">(current)</span></a>
               </li>
               
+              <!-- Blog -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/blog/">blog</a>
+              </li>
 
               <!-- Other pages -->
               <li class="nav-item ">
@@ -111,7 +115,7 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/photo.jpg" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="photo.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/photo.jpg" class="img-fluid z-depth-1 rounded-circle" width="auto" height="auto" alt="photo.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -120,12 +124,25 @@
           </div>
 
           <div class="clearfix">
-            <p><a href="https://www.linkedin.com/in/syxie-/" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="text"></a>
-<a href="mailto:sy.xie@tamu.edu"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="text"></a></p>
+            <p><a href="https://www.linkedin.com/in/syxie-/" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&amp;logo=linkedin&amp;logoColor=white" alt="text"></a>
+<a href="mailto:syxie@berkeley.edu"><img src="https://img.shields.io/badge/Gmail-D14836?style=flat-square&amp;logo=gmail&amp;logoColor=white" alt="text"></a>
+<a href="https://scholar.google.com/citations?user=nrnJBX0AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=flat-square&amp;logo=googlescholar&amp;logoColor=white" alt="text"></a>
+<a href="https://x.com/shuangyu0_0xie" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/Twitter-000000?style=flat-square&amp;logo=x&amp;logoColor=white" alt="text"></a></p>
 
-<p>I am a Postdoctoral researcher in the <a href="https://autolab.berkeley.edu/" rel="external nofollow noopener" target="_blank">AUTOLab</a> at UC Berkeley, working with <a href="https://goldberg.berkeley.edu/" rel="external nofollow noopener" target="_blank">Prof. Ken Goldberg</a>. Prior to joining UC Berkeley, I obtained my Ph.D. and M.S. degree from Texas A&amp;M University, advised by <a href="https://people.engr.tamu.edu/dzsong/index.html" rel="external nofollow noopener" target="_blank">Prof. Dezhen Song</a>.</p>
+<p>I am a Postdoctoral researcher in the <a href="https://autolab.berkeley.edu/" rel="external nofollow noopener" target="_blank">AUTOLab</a> at UC Berkeley, working with <a href="https://goldberg.berkeley.edu/" rel="external nofollow noopener" target="_blank">Prof. Ken Goldberg</a>. Prior to joining UC Berkeley, I obtained my Ph.D. and M.S. degree from Texas A&amp;M University, advised by <a href="https://people.engr.tamu.edu/dzsong/index.html" rel="external nofollow noopener" target="_blank">Prof. Dezhen Song</a>.  My research aims to make robots more capable and resilient in unstructured environments, spanning applications in manipulation, mobile manipulation and agricultural robotics.</p>
 
-<p>I design algorithmic frameworks that help robots move from theory to the real world—where uncertainty, complexity, and noise are the norm. My research aims to make robots more capable and resilient in unstructured environments, spanning applications in manipulation, outdoor navigation, and mobile manipulation. Recently, I’ve been exploring how task and motion planning, Vision-Language Models (VLMs), and 3D/4D reconstruction can come together to enable robots to perceive, reason, and act with greater autonomy—whether it’s grasping objects, navigating dynamic spaces, or modeling plants in natural settings.</p>
+<h3 id="research-highlights">Research Highlights</h3>
+
+<p>My recent work explores how <strong>Vision-Language Models and robotics can advance each other</strong>: real robot experience provides the grounded, embodied data that VLMs need, while VLMs bring the open-world semantic understanding that robots need to perceive, reason, and act. I pursue this along three threads:</p>
+
+<ul>
+  <li>
+<strong>Learning VLMs from robot experience.</strong> <a href="https://berkeleyautomation.github.io/robo2vlm/" rel="external nofollow noopener" target="_blank">Robo2VLM</a> (NeurIPS 2025, <em>Spotlight</em>) turns large-scale, in-the-wild robot manipulation datasets into grounded visual question-answering data, using the robot’s own sensing and kinematics to supervise VLM training and evaluation.</li>
+  <li>
+<strong>Evaluating VLMs for robotics.</strong> <a href="https://berkeleyautomation.github.io/robovista" rel="external nofollow noopener" target="_blank">RoboVista</a> (RSS 2026) is the first robot-at-work benchmark that evaluates VLMs across diverse real-world robot deployments—manipulation, driving, and surgical scenes—with a public <a href="https://berkeleyautomation.github.io/robovista/leaderboard.html" rel="external nofollow noopener" target="_blank">leaderboard</a>.</li>
+  <li>
+<strong>Understanding and curating robot data with VLMs.</strong> <a href="https://berkeleyautomation.github.io/robosq/" rel="external nofollow noopener" target="_blank">RoboSQ</a> (ICRA 2026) is a semantic query engine that uses natural language to curate high-quality, task-aligned training data from large robot datasets, and <a href="https://berkeleyautomation.github.io/RoboSegNet/" rel="external nofollow noopener" target="_blank">RoboSegNet</a> (CVPR 2026) fuses vision and kinematics to segment robot trajectories into meaningful sub-tasks, zero-shot.</li>
+</ul>
 
 
           </div>
@@ -137,52 +154,34 @@
               <table class="table table-sm table-borderless">
               
                 <tr>
+                  <th scope="row">Apr 20, 2026</th>
+                  <td>
+                    🎉 <strong><a href="https://berkeleyautomation.github.io/robovista" rel="external nofollow noopener" target="_blank">RoboVista</a></strong> has been accepted to <strong>RSS 2026</strong>! ⭐ <em style="color: grey;">The first robot-at-work benchmark for evaluating Vision–Language Models across diverse real-world robotics applications.</em>
+
+📈 The <a href="https://berkeleyautomation.github.io/robovista/leaderboard.html" rel="external nofollow noopener" target="_blank">leaderboard</a> is now online, and the benchmark is available on <a href="https://huggingface.co/datasets/sy-xie/robovista" rel="external nofollow noopener" target="_blank">Hugging Face</a> 🤗 !
+
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Feb 26, 2026</th>
+                  <td>
+                    🎉 <strong><a href="https://berkeleyautomation.github.io/RoboSegNet/" rel="external nofollow noopener" target="_blank">RoboSegNet</a></strong> has been accepted to <strong>CVPR 2026</strong>! ⭐ <em style="color: grey;">Multi-task robot trajectory segmentation that fuses vision and kinematics for state-of-the-art, zero-shot temporal boundaries.</em>
+
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Jan 29, 2026</th>
+                  <td>
+                    🎉 <strong><a href="https://berkeleyautomation.github.io/robosq/" rel="external nofollow noopener" target="_blank">RoboSQ</a></strong> has been accepted to <strong>ICRA 2026</strong>! ⭐ <em style="color: grey;">A semantic query engine that curates high-quality, task-aligned robot training data from large datasets using natural language.</em>
+
+                  </td>
+                </tr>
+                <tr>
                   <th scope="row">Sep 20, 2025</th>
                   <td>
                     🎉 <strong>Our <a href="https://berkeleyautomation.github.io/robo2vlm/" rel="external nofollow noopener" target="_blank">Robo2VLM paper</a> has been accepted to 2025 NeurIPS Dataset and Benchmark track as a Spotlight!</strong> 🚀✨
 
-📊 The dataset Robo2VLM-1 was downloaded 2,537 times last month at <a href="https://huggingface.co/datasets/keplerccc/Robo2VLM-1" rel="external nofollow noopener" target="_blank">Hugging Face</a> 🤗 !
-
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Jan 30, 2024</th>
-                  <td>
-                    🎉 <strong>Two papers accepted by ICRA 2025</strong> 🚀
-
-<strong><a href="https://arxiv.org/pdf/2504.03938" rel="external nofollow noopener" target="_blank">Energy Efficient Planning for Repetitive Heterogeneous Tasks in Precision Agriculture</a></strong> and <strong><a href="https://ieeexplore.ieee.org/abstract/document/11128748" rel="external nofollow noopener" target="_blank">Heterogeneous Sensor Fusion and Active Perception for Transparent Object Reconstruction with a PDM² Sensor and a Camera</a></strong>
-
-Thank you for the contributions from all collaborators! 🙏
-
-<!-- ***
-
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
-
-#### Hipster list
-<ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
-</ul>
-
-Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90's yr typewriter selfies letterpress cardigan vegan.
-
-***
-
-Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.
-
-> We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-> —Anais Nin
-
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual. -->
-
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Jul 24, 2023</th>
-                  <td>
-                    🔥We released MapBench, the first dataset specifically designed for human-readable, pixel-based map-based outdoor navigation, curated from complex path finding scenarios. Explore <a href="https://arxiv.org/abs/2503.14607" rel="external nofollow noopener" target="_blank">our paper</a> for more details.
+📊 The dataset Robo2VLM-1 has been downloaded 29,542 times in total at <a href="https://huggingface.co/datasets/keplerccc/Robo2VLM-1" rel="external nofollow noopener" target="_blank">Hugging Face</a> 🤗 !
 
                   </td>
                 </tr>
@@ -192,13 +191,197 @@ Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan c
 
 
           <!-- Latest posts -->
-          
+          <h2><a href="/blog/" style="color: inherit;">latest posts</a></h2>
+          <div class="news">
+            <div class="table-responsive">
+              <table class="table table-sm table-borderless">
+              
+                <tr>
+                  <th scope="row">Jul 6, 2026</th>
+                  <td>
+                    
+                    <a class="news-title" href="https://berkeleyautomation.github.io/robovista/leaderboard.html" rel="external nofollow noopener" target="_blank">RoboVista leaderboard is online — see how VLMs stack up on real robot tasks 🏆</a>
+                    
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
 
           <!-- Selected papers -->
           <h2><a href="/publications/" style="color: inherit;">selected publications</a></h2>
           <div class="publications">
             <p><small>* indicates co-first author</small></p>
             <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-3 preview">
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/robovista-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/robovista-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/robovista-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/robovista.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="robovista.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="xie2026robovista" class="col-sm-9">
+        <!-- Title -->
+        <div class="title">RoboVista: Evaluating Vision Language Models for Diverse Robot Applications</div>
+        <!-- Author -->
+
+        <div class="author">
+        
+
+        <em>Shuangyu Xie*</em>, Kaiyuan Chen*, Ziyang Chen, Simeon Adebola, Yixuan Huang, Zehan Ma, Tianshuang Qiu, Wentao Yuan, Dhruv Shah, Pannag R. Sanketi, and Ken Goldberg</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Robotics: Science and Systems (RSS)</em>, 2026
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a href="https://berkeleyautomation.github.io/robovista" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-3 preview">
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/robosegnet-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/robosegnet-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/robosegnet-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/robosegnet.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="robosegnet.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="chen2026robosegnet" class="col-sm-9">
+        <!-- Title -->
+        <div class="title">Learning Multi-Task Robot Trajectory Segmentation from Visual and Kinematic Streams</div>
+        <!-- Author -->
+
+        <div class="author">
+        
+
+        Kaiyuan Chen*, <em>Shuangyu Xie*</em>, Andrew Goldberg, and Ken Goldberg</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a href="https://berkeleyautomation.github.io/RoboSegNet/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-3 preview">
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/robosq-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/robosq-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/robosq-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/robosq.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="robosq.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="chen2026robosq" class="col-sm-9">
+        <!-- Title -->
+        <div class="title">RoboSQ: Semantic Queries for Task-Aligned Robot Training Data</div>
+        <!-- Author -->
+
+        <div class="author">
+        
+
+        Kaiyuan Chen*, <em>Shuangyu Xie*</em>, Kush Hari, Andrew Goldberg, Kavish Kondap, and Ken Goldberg</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In IEEE International Conference on Robotics and Automation (ICRA)</em>, 2026
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a href="https://berkeleyautomation.github.io/robosq/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
@@ -711,7 +894,7 @@ Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan c
     <!-- Footer -->    <!-- 
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        &copy; Copyright 2025 Shuangyu  Xie. 
+        &copy; Copyright 2026 Shuangyu  Xie. 
       </div>
     </footer> -->
 

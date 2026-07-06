@@ -127,6 +127,12 @@ table td {
   font-size: 1rem;
 }
 
+.news .table th {
+  white-space: nowrap;
+  vertical-align: top;
+  padding-right: 1rem;
+}
+
 a,
 table.table a {
   color: var(--global-theme-color);
@@ -192,6 +198,10 @@ blockquote {
 .profile {
   width: 100%;
 }
+.profile img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
 .profile .address {
   margin-bottom: 5px;
   margin-top: 5px;
@@ -211,8 +221,11 @@ blockquote {
 }
 
 @media (min-width: 576px) {
+  .profile.float-right {
+    margin-top: -5.8rem;
+  }
   .profile {
-    width: 30%;
+    width: 26.5%;
   }
   .profile .address p {
     display: block;
