@@ -2,19 +2,25 @@
  * Themes
  ******************************************************************************/
  
+// Morandi palette (matches berkeleyautomation.github.io/robovista)
 :root {
-  --global-bg-color: #{$white-color};
-  --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
+  --global-bg-color: #f9f9f7;
+  --global-code-bg-color: rgba(181, 9, 172, 0.05);
+  --global-text-color: #0b0b0b;
+  --global-text-color-2: #52514e;
+  --global-text-color-light: #898781;
   --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
-  --global-footer-link-color: #{$white-color};
-  --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0,0,0,.1);
-  --global-card-bg-color: #{$white-color};
+  --global-hover-color: #8f0788;
+  --global-block-bg-color: #fcfcfb;
+  --global-ring-color: rgba(11, 11, 11, 0.1);
+  --global-baseline-color: #c3c2b7;
+  --global-accent-wash: rgba(181, 9, 172, 0.06);
+  --global-footer-bg-color: #f3f3ef;
+  --global-footer-text-color: #52514e;
+  --global-footer-link-color: #0b0b0b;
+  --global-distill-app-color: #898781;
+  --global-divider-color: #e1e0d9;
+  --global-card-bg-color: #fcfcfb;
 
   .fa-sun {
     display : none;
@@ -34,18 +40,23 @@
 }
 
 html[data-theme='dark'] {
-  --global-bg-color: #{$grey-color-dark};
+  --global-bg-color: #0d0d0d;
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color-light};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
-  --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
+  --global-text-color: #ffffff;
+  --global-text-color-2: #c3c2b7;
+  --global-text-color-light: #898781;
+  --global-theme-color: #e05fd6;
+  --global-hover-color: #ea85e2;
+  --global-block-bg-color: #1a1a19;
+  --global-ring-color: rgba(255, 255, 255, 0.1);
+  --global-baseline-color: #383835;
+  --global-accent-wash: rgba(224, 95, 214, 0.1);
+  --global-footer-bg-color: #1a1a19;
+  --global-footer-text-color: #c3c2b7;
+  --global-footer-link-color: #ffffff;
+  --global-distill-app-color: #898781;
+  --global-divider-color: #2c2c2a;
+  --global-card-bg-color: #1a1a19;
 
   .fa-sun {
     padding-left: 10px;

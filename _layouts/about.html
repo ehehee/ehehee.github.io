@@ -42,20 +42,26 @@ layout: default
 
           <!-- News -->
           {% if page.news -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
+          <section class="section-block">
+            <h2 class="section-title"><a href="{{ '/news/' | relative_url }}">News</a></h2>
             {%- include news.html %}
+          </section>
           {%- endif %}
 
           <!-- Latest posts -->
           {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
+          <section class="section-block">
+            <h2 class="section-title"><a href="{{ '/blog/' | relative_url }}">Latest Posts</a></h2>
             {%- include latest_posts.html %}
+          </section>
           {%- endif %}
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+          <section class="section-block">
+            <h2 class="section-title"><a href="{{ '/publications/' | relative_url }}">Selected Publications</a></h2>
             {%- include selected_papers.html %}
+          </section>
           {%- endif %}
 
           <!-- Social -->

@@ -18,6 +18,11 @@ $green-color-dark:    #009f06 !default;
 $green-color-light:   #ddffdd !default;
 $green-color-bright:  #11D68B !default;
 $purple-color:        #B509AC !default;
+
+// Font stacks (Noto Sans body + Roboto Slab headings, as on lucys0.github.io)
+$font-sans: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !default;
+$font-heading: "Roboto Slab", "Noto Sans", system-ui, serif !default;
+$font-mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace !default;
 $light-purple-color:  lighten($purple-color, 25%);
 $pink-color:          #f92080 !default;
 $pink-color-light:    #ffdddd !default;

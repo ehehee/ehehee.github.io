@@ -6,9 +6,16 @@ body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  font-family: $font-sans;
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
 
   h1, h2, h3, h4, h5, h6 {
     scroll-margin-top: 66px;
+    font-family: $font-heading;
+    font-weight: 700;
+    letter-spacing: -0.01em;
   }
 }
 
@@ -33,7 +40,128 @@ body.sticky-bottom-footer {
   }
 }
 
-// TODO: redefine content layout.
+// Page header (name + subtitle on the about page)
+
+.post-header {
+  .post-title {
+    font-family: $font-heading;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+  }
+
+  .desc {
+    color: var(--global-text-color-2);
+    font-size: 14px;
+    margin-bottom: 1.1rem;
+  }
+}
+
+// Section blocks — quiet cards, robovista style
+
+.section-block {
+  clear: both;
+  background-color: var(--global-block-bg-color);
+  border: 1px solid var(--global-ring-color);
+  border-radius: 8px;
+  padding: 18px 20px 14px;
+  margin-bottom: 16px;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Section titles — Roboto Slab, like lucys0.github.io headings
+.section-title {
+  font-family: $font-heading;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--global-text-color);
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+// Contact chips (mono bordered pills, robovista style)
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1.1rem;
+
+  .chip {
+    font-family: $font-mono;
+    font-size: 11.5px;
+    color: var(--global-text-color-2);
+    border: 1px solid var(--global-baseline-color);
+    border-radius: 3px;
+    padding: 2px 8px;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:hover {
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+// News / latest-posts lists inside blocks
+.news {
+  .table {
+    margin-bottom: 0;
+
+    // Match the date and text line boxes so their first lines align
+    th {
+      font-family: $font-mono;
+      color: var(--global-text-color-light);
+      font-weight: 500;
+      font-size: 11.5px;
+      line-height: 21px;
+      width: 7.5rem;
+      padding-top: 0.15rem;
+      padding-bottom: 0.15rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    td {
+      font-size: 14px;
+      line-height: 21px;
+      padding-top: 0.15rem;
+      padding-bottom: 0.15rem;
+    }
+  }
+}
+
+// Navbar — bold site title left, clear bold links right (lilianweng.github.io style)
+.navbar {
+  font-size: 15px;
+
+  .navbar-brand.title {
+    font-family: $font-heading;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+}
 
 
 /******************************************************************************
