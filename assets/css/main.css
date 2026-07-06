@@ -6,18 +6,23 @@
  * Themes
  ******************************************************************************/
 :root {
-  --global-bg-color: #ffffff;
+  --global-bg-color: #f9f9f7;
   --global-code-bg-color: rgba(181, 9, 172, 0.05);
-  --global-text-color: #000000;
-  --global-text-color-light: #828282;
+  --global-text-color: #0b0b0b;
+  --global-text-color-2: #52514e;
+  --global-text-color-light: #898781;
   --global-theme-color: #B509AC;
-  --global-hover-color: #B509AC;
-  --global-footer-bg-color: #1C1C1D;
-  --global-footer-text-color: #e8e8e8;
-  --global-footer-link-color: #ffffff;
-  --global-distill-app-color: #828282;
-  --global-divider-color: rgba(0,0,0,.1);
-  --global-card-bg-color: #ffffff;
+  --global-hover-color: #8f0788;
+  --global-block-bg-color: #fcfcfb;
+  --global-ring-color: rgba(11, 11, 11, 0.1);
+  --global-baseline-color: #c3c2b7;
+  --global-accent-wash: rgba(181, 9, 172, 0.06);
+  --global-footer-bg-color: #f3f3ef;
+  --global-footer-text-color: #52514e;
+  --global-footer-link-color: #0b0b0b;
+  --global-distill-app-color: #898781;
+  --global-divider-color: #e1e0d9;
+  --global-card-bg-color: #fcfcfb;
 }
 :root .fa-sun {
   display: none;
@@ -35,18 +40,23 @@
 }
 
 html[data-theme=dark] {
-  --global-bg-color: #1C1C1D;
+  --global-bg-color: #0d0d0d;
   --global-code-bg-color: #2c3237;
-  --global-text-color: #e8e8e8;
-  --global-text-color-light: #e8e8e8;
-  --global-theme-color: #2698BA;
-  --global-hover-color: #2698BA;
-  --global-footer-bg-color: #e8e8e8;
-  --global-footer-text-color: #1C1C1D;
-  --global-footer-link-color: #000000;
-  --global-distill-app-color: #e8e8e8;
-  --global-divider-color: #424246;
-  --global-card-bg-color: #212529;
+  --global-text-color: #ffffff;
+  --global-text-color-2: #c3c2b7;
+  --global-text-color-light: #898781;
+  --global-theme-color: #e05fd6;
+  --global-hover-color: #ea85e2;
+  --global-block-bg-color: #1a1a19;
+  --global-ring-color: rgba(255, 255, 255, 0.1);
+  --global-baseline-color: #383835;
+  --global-accent-wash: rgba(224, 95, 214, 0.1);
+  --global-footer-bg-color: #1a1a19;
+  --global-footer-text-color: #c3c2b7;
+  --global-footer-link-color: #ffffff;
+  --global-distill-app-color: #898781;
+  --global-divider-color: #2c2c2a;
+  --global-card-bg-color: #1a1a19;
 }
 html[data-theme=dark] .fa-sun {
   padding-left: 10px;
@@ -70,9 +80,16 @@ body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   scroll-margin-top: 66px;
+  font-family: "Roboto Slab", "Noto Sans", system-ui, serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 body.fixed-top-nav {
@@ -84,11 +101,111 @@ body.sticky-bottom-footer {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 960px;
 }
 
 .profile img {
   width: 100%;
+}
+
+.post-header .post-title {
+  font-family: "Roboto Slab", "Noto Sans", system-ui, serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+}
+.post-header .desc {
+  color: var(--global-text-color-2);
+  font-size: 14px;
+  margin-bottom: 1.1rem;
+}
+
+.section-block {
+  clear: both;
+  background-color: var(--global-block-bg-color);
+  border: 1px solid var(--global-ring-color);
+  border-radius: 8px;
+  padding: 18px 20px 14px;
+  margin-bottom: 16px;
+}
+.section-block > :last-child {
+  margin-bottom: 0;
+}
+
+.section-title {
+  font-family: "Roboto Slab", "Noto Sans", system-ui, serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--global-text-color);
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.section-title a {
+  color: inherit;
+}
+.section-title a:hover {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1.1rem;
+}
+.chip-row .chip {
+  font-family: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+  font-size: 11.5px;
+  color: var(--global-text-color-2);
+  border: 1px solid var(--global-baseline-color);
+  border-radius: 3px;
+  padding: 2px 8px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.chip-row .chip:hover {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.news .table {
+  margin-bottom: 0;
+}
+.news .table th {
+  font-family: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+  color: var(--global-text-color-light);
+  font-weight: 500;
+  font-size: 11.5px;
+  line-height: 21px;
+  width: 7.5rem;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+  font-variant-numeric: tabular-nums;
+}
+.news .table td {
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+}
+
+.navbar {
+  font-size: 15px;
+}
+.navbar .navbar-brand.title {
+  font-family: "Roboto Slab", "Noto Sans", system-ui, serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
 }
 
 /******************************************************************************
@@ -559,14 +676,18 @@ footer.sticky-bottom {
 }
 .publications ol.bibliography li .abbr abbr {
   display: inline-block;
-  background-color: var(--global-theme-color);
-  padding-left: 1rem;
-  padding-right: 1rem;
+  font-family: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+  font-size: 11.5px;
+  border: 1px solid var(--global-baseline-color);
+  border-radius: 3px;
+  background-color: transparent;
+  padding: 1px 6px;
 }
 .publications ol.bibliography li .abbr abbr a {
-  color: white;
+  color: var(--global-text-color-light);
 }
 .publications ol.bibliography li .abbr abbr a:hover {
+  color: var(--global-theme-color);
   text-decoration: none;
 }
 .publications ol.bibliography li .abbr .award {
@@ -574,7 +695,7 @@ footer.sticky-bottom {
   border: 1px solid var(--global-theme-color);
 }
 .publications ol.bibliography li .title {
-  font-weight: bolder;
+  font-weight: 600;
 }
 .publications ol.bibliography li .author a {
   border-bottom: 1px dashed var(--global-theme-color);
@@ -597,12 +718,14 @@ footer.sticky-bottom {
   border-bottom: 1px dashed var(--global-text-color);
 }
 .publications ol.bibliography li .links a.btn {
-  color: var(--global-text-color);
-  border: 1px solid var(--global-text-color);
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  font-family: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  color: var(--global-text-color-2);
+  border: 1px solid var(--global-baseline-color);
+  border-radius: 3px;
+  padding: 2px 8px;
   margin-left: 0;
 }
 .publications ol.bibliography li .links a.btn:hover {
