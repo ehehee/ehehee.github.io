@@ -201,6 +201,35 @@ body.sticky-bottom-footer {
   font-weight: 700;
   letter-spacing: -0.01em;
 }
+.navbar .brand-bot {
+  vertical-align: -8px;
+  margin-right: 8px;
+  color: var(--global-text-color);
+}
+.navbar .brand-bot line {
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+}
+.navbar .brand-bot .bot-body,
+.navbar .brand-bot .bot-claw {
+  fill: #e58f76;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+.navbar .brand-bot .bot-eye {
+  fill: currentColor;
+}
+.navbar .brand-bot .bot-smile {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.3;
+  stroke-linecap: round;
+}
+.navbar:hover .brand-bot .bot-claw {
+  fill: var(--global-theme-color);
+}
 .navbar .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: capitalize;
