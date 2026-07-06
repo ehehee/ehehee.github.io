@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="78" viewBox="0 0 36 24">
+  <!-- Walking quadruped mascot: golden outlined body, stick legs with knees,
+       sensor head on a neck. Standalone animated copy of the site banner mascot. -->
+  <style>
+    svg { color: #0b0b0b; }
+    line { stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; }
+    .bot-body { fill: #eec84f; stroke: currentColor; stroke-width: 1.6; }
+    .bot-head { fill: currentColor; }
+    .root { animation: bot-bob 0.7s ease-in-out infinite; }
+    .bot-leg { transform-box: fill-box; transform-origin: 58% 0; animation: bot-trot 0.7s ease-in-out infinite; }
+    .bot-shin { transform-box: fill-box; transform-origin: 0 0; animation: bot-knee 0.7s ease-in-out infinite; }
+    .leg-b, .leg-b .bot-shin { animation-delay: -0.35s; }
+    @keyframes bot-bob { 0%, 50%, 100% { transform: translateY(0); } 25%, 75% { transform: translateY(-1px); } }
+    @keyframes bot-trot { 0%, 100% { transform: rotate(14deg); } 50% { transform: rotate(-14deg); } }
+    @keyframes bot-knee { 0%, 100% { transform: rotate(-8deg); } 50% { transform: rotate(18deg); } }
+    @media (prefers-reduced-motion: reduce) { .root, .bot-leg, .bot-shin { animation: none; } }
+  </style>
+  <g class="root">
+    <g class="bot-leg leg-a">
+      <line x1="9" y1="12.5" x2="6.8" y2="17.5"/>
+      <line class="bot-shin" x1="6.8" y1="17.5" x2="10.4" y2="22"/>
+    </g>
+    <g class="bot-leg leg-b">
+      <line x1="13" y1="12.5" x2="10.8" y2="17.5"/>
+      <line class="bot-shin" x1="10.8" y1="17.5" x2="14.4" y2="22"/>
+    </g>
+    <g class="bot-leg leg-b">
+      <line x1="21" y1="12.5" x2="18.8" y2="17.5"/>
+      <line class="bot-shin" x1="18.8" y1="17.5" x2="22.4" y2="22"/>
+    </g>
+    <g class="bot-leg leg-a">
+      <line x1="25" y1="12.5" x2="22.8" y2="17.5"/>
+      <line class="bot-shin" x1="22.8" y1="17.5" x2="26.4" y2="22"/>
+    </g>
+    <line class="bot-neck" x1="25.5" y1="7.5" x2="30" y2="3.5"/>
+    <rect class="bot-head" x="29" y="1.6" width="6.4" height="3.8" rx="0.8"/>
+    <rect class="bot-body" x="4.5" y="6.5" width="23" height="7" rx="2.8"/>
+  </g>
+</svg>

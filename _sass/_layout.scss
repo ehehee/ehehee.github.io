@@ -155,11 +155,82 @@ body.sticky-bottom-footer {
     letter-spacing: -0.01em;
   }
 
+  // Walking quadruped mascot in the banner (line-drawing style:
+  // golden outlined body, stick legs with knees, sensor head on a neck)
+  .brand-bot {
+    vertical-align: -8px;
+    margin-right: 8px;
+    color: var(--global-text-color);
+    animation: bot-bob 0.7s ease-in-out infinite;
+
+    line {
+      stroke: currentColor;
+      stroke-width: 1.9;
+      stroke-linecap: round;
+    }
+
+    .bot-body {
+      fill: #eec84f;
+      stroke: currentColor;
+      stroke-width: 1.6;
+    }
+
+    .bot-head {
+      fill: currentColor;
+    }
+
+    // Trot gait: diagonal leg pairs swing in opposite phase,
+    // thigh rotates at the hip and shin bends at the knee
+    .bot-leg {
+      transform-box: fill-box;
+      transform-origin: 58% 0;
+      animation: bot-trot 0.7s ease-in-out infinite;
+    }
+
+    .bot-shin {
+      transform-box: fill-box;
+      transform-origin: 0 0;
+      animation: bot-knee 0.7s ease-in-out infinite;
+    }
+
+    .leg-b,
+    .leg-b .bot-shin {
+      animation-delay: -0.35s;
+    }
+  }
+
+  &:hover .brand-bot .bot-head {
+    fill: var(--global-theme-color);
+  }
+
   .navbar-nav .nav-item .nav-link {
     font-weight: 600;
     text-transform: capitalize;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
+  }
+}
+
+@keyframes bot-bob {
+  0%, 50%, 100% { transform: translateY(0); }
+  25%, 75% { transform: translateY(-1px); }
+}
+
+@keyframes bot-trot {
+  0%, 100% { transform: rotate(14deg); }
+  50% { transform: rotate(-14deg); }
+}
+
+@keyframes bot-knee {
+  0%, 100% { transform: rotate(-8deg); }
+  50% { transform: rotate(18deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar .brand-bot,
+  .navbar .brand-bot .bot-leg,
+  .navbar .brand-bot .bot-shin {
+    animation: none;
   }
 }
 
