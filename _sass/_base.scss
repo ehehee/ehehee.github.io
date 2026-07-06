@@ -35,6 +35,13 @@ table {
   }
 }
 
+// Keep the news / latest-posts date column on one line (fits e.g. "Apr 20, 2026")
+.news .table th {
+  white-space: nowrap;
+  vertical-align: top;
+  padding-right: 1rem;
+}
+
 a,
 table.table a {
   color: var(--global-theme-color);
@@ -114,6 +121,11 @@ blockquote {
 .profile {
   width: 100%;
 
+  img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
   .address {
     margin-bottom: 5px;
     margin-top: 5px;
@@ -135,8 +147,13 @@ blockquote {
 }
 
 @media (min-width: 576px) {
+  .profile.float-right {
+    // pull the photo up so its top aligns with the name in the page header
+    margin-top: -5.8rem;
+  }
+
   .profile {
-    width: 30%;
+    width: 26.5%;
 
     .address {
       p {

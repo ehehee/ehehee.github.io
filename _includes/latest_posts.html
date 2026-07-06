@@ -14,7 +14,11 @@
                 <tr>
                   <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
                   <td>
+                    {% if item.external_url %}
+                    <a class="news-title" href="{{ item.external_url }}">{{ item.title }}</a>
+                    {% else %}
                     <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                    {% endif %}
                   </td>
                 </tr>
               {%- endfor %}
