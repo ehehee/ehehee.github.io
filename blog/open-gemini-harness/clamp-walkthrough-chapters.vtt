@@ -1,0 +1,32 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.000
+The task: pick, hand over, place
+
+00:00:02.000 --> 00:00:05.167
+01  Pick up the clamp
+
+00:00:05.167 --> 00:00:09.334
+02  Find a reachable transfer pose
+
+00:00:09.333 --> 00:00:18.333
+03  Close the receiving gripper
+
+00:00:18.333 --> 00:00:20.833
+04  Observe before releasing
+
+00:00:20.833 --> 00:00:26.833
+05  Release the giving arm
+
+00:00:26.833 --> 00:00:29.500
+06  Retreat after the transfer
+
+00:00:29.500 --> 00:00:32.500
+07  Carry to the blue bin
+
+00:00:32.500 --> 00:00:35.667
+08  Place and return home
+
+00:00:35.667 --> 00:00:39.667
+Result: completed handover and placement
+

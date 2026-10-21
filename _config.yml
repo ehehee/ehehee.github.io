@@ -127,8 +127,8 @@ blog_description: notes on robotics and research # displayed under the blog titl
 permalink: /blog/:year/:title/
 
 # Pagination
-# pagination:
-#   enabled: true
+pagination:
+  enabled: true
 
 # related_blog_posts:
 #   enabled: true
