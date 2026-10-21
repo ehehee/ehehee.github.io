@@ -6,8 +6,8 @@ font-family:var(--serif);color:var(--ink);background:#fdfdfb}
 ::selection{background:#d8e9df}a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
 a:hover{color:#122f28}button,a,summary{touch-action:manipulation}
 :focus-visible{outline:3px solid #80ad9e;outline-offset:5px}
-.masthead{max-width:876px;margin:auto;padding:24px 28px 18px;display:flex;justify-content:space-between;gap:20px;
-font:11px/1.5 var(--sans);letter-spacing:.13em;text-transform:uppercase}
+.masthead{max-width:1100px;margin:auto;padding:24px 28px 18px;display:flex;justify-content:space-between;gap:20px;
+font:15px/1.5 var(--sans);letter-spacing:.11em;text-transform:uppercase}
 .masthead span{color:var(--muted)}.masthead a{text-decoration:none}
 .section-nav{position:fixed;top:50%;left:24px;transform:translateY(-50%);z-index:20;padding:14px 10px;background:rgba(253,253,251,.86);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:16px;box-shadow:0 6px 24px rgba(35,42,41,.08)}
 .section-nav::before{content:"ON THIS PAGE";display:block;padding:2px 12px 10px;font:10px/1.5 var(--sans);letter-spacing:.12em;color:var(--muted)}
@@ -17,7 +17,7 @@ font:11px/1.5 var(--sans);letter-spacing:.13em;text-transform:uppercase}
 .section-nav a:hover{color:var(--ink);background:#eef2ec}
 .section-nav a[aria-current="location"]{color:var(--ink);font-weight:600}
 .section-nav a[aria-current="location"] .dot{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 4px rgba(36,99,86,.16);transform:scale(1.2)}
-main{max-width:776px;margin:auto;padding:56px 28px 88px;display:block}
+main{max-width:1000px;margin:auto;padding:56px 28px 88px;display:block}
 main>*{min-width:0}main>header{margin:0 0 22px;width:100%}
 h1{font-family:var(--serif);font-weight:500;font-size:clamp(32px,4.6vw,51px);line-height:1.13;letter-spacing:-.035em;margin:15px 0 24px;text-wrap:balance}
 h2{font:600 25px/1.3 var(--sans);letter-spacing:-.035em;margin:58px 0 16px;scroll-margin-top:10px}
@@ -58,12 +58,12 @@ figcaption,.caption,.source{font:12px/1.65 var(--sans);color:var(--muted);margin
 .md-callout{margin:30px 0;padding:26px 30px;border:1px solid #b8cdd3;border-left:5px solid #365c68;border-radius:12px;background:linear-gradient(120deg,#edf4f8,#f5f8f7)}
 .md-callout-label{margin:0 0 16px;font:600 11px/1.5 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#547782}
 .md-callout-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
-.md-callout-list li{display:grid;grid-template-columns:2.2em 1fr;font-size:17px;line-height:1.55;color:#233e49}
+.md-callout-list li{display:grid;grid-template-columns:2.2em 1fr;font-size:19px;line-height:1.55;color:#233e49}
 .md-callout-list .num{font:700 15px/1.75 var(--sans)}
 .md-callout.note{border-color:#d7cdbb;border-left-color:#b08a4a;background:#faf7f0}
-.md-callout.note .md-callout-label{color:#8a6d3b}.md-callout.note p:not(.md-callout-label){margin:0;font-size:17px;line-height:1.6;color:#3d3426}
+.md-callout.note .md-callout-label{color:#8a6d3b}.md-callout.note p:not(.md-callout-label){margin:0;font-size:19px;line-height:1.6;color:#3d3426}
 .harness-code{margin:22px 0 26px;padding:16px 20px;background:#f4f6f3;border:1px solid var(--line);border-radius:8px;overflow-x:auto}
-.harness-code code{background:none;padding:0;font-size:12.5px;line-height:1.6;white-space:pre;overflow-wrap:normal}
+.harness-code code{background:none;padding:0;font-size:14.5px;line-height:1.6;white-space:pre;overflow-wrap:normal}
 .harness-list{margin:0 0 22px;padding-left:1.4em}.harness-list li{margin:0 0 10px}
 code{font: .77em/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;background:#edf1ec;color:#345348;padding:3px 5px;border-radius:3px;overflow-wrap:anywhere}
 blockquote{margin:8px 0 26px;padding:16px 22px;border-left:2px solid #89a796;background:#f5f6f2;font-size:20px;line-height:1.65;font-style:italic}
@@ -81,7 +81,7 @@ tbody tr:nth-child(even){background:#f7f8f4}tbody tr:last-child td{border-bottom
 td:nth-child(4){white-space:nowrap}.chart{padding:24px 0 18px;margin:20px 0 30px;border-block:1px solid var(--line)}
 svg{width:100%;font-family:var(--sans);font-size:11px;fill:#42534a}
 .source{border-top:1px solid var(--line);padding-top:24px;margin-top:32px}
-.page-footer{max-width:820px;margin:0 auto 32px;padding-top:20px;border-top:1px solid var(--line);font:11px/1.6 var(--sans);color:var(--muted);display:flex;justify-content:space-between}
+.page-footer{max-width:1044px;margin:0 auto 32px;padding-top:20px;border-top:1px solid var(--line);font:11px/1.6 var(--sans);color:var(--muted);display:flex;justify-content:space-between}
 .page-footer a{text-decoration:none}
 
 
@@ -108,38 +108,39 @@ p,li{font-size:17.5px;line-height:1.75}
 .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery figcaption{font-size:11px}
 table{font-size:12px}th,td{padding:12px}.table-wrap:has(th:nth-child(5)) table{min-width:660px}
 .chart{padding:12px 0}.hero{margin-bottom:26px}blockquote{font-size:18px}.page-footer{margin-inline:20px}}
-@media(max-width:440px){.gallery,.gallery.cols-4,.gallery.cols-2{grid-template-columns:1fr}.masthead span{font-size:9px}p,li{font-size:16px}h1{font-size:25px}}
+@media(max-width:440px){.gallery,.gallery.cols-4,.gallery.cols-2{grid-template-columns:1fr}.masthead span{font-size:12px}p,li{font-size:16px}h1{font-size:25px}}
 /* Compact reading scale, shared by the article and its supporting figures. */
 main{padding-top:36px;padding-bottom:64px}
 main>header{margin-bottom:14px}
-h1{font-size:clamp(28px,3vw,34px);line-height:1.2;margin:12px 0 14px}
-h2{font-size:22px;margin:38px 0 12px}
-p,li{font-size:17px;line-height:1.65;margin-bottom:16px}
-.eyebrow{font-size:10px;margin-bottom:0}
-.byline{font-size:12px;line-height:1.6;margin-bottom:12px}
+h1{font-size:clamp(32px,3.6vw,42px);line-height:1.2;margin:12px 0 16px}
+h2{font-size:27px;margin:44px 0 14px}
+p,li{font-size:20px;line-height:1.7;margin-bottom:18px}
+.eyebrow{font-size:12px;margin-bottom:0}
+.byline{font-size:19px;line-height:1.6;margin-bottom:14px;overflow-wrap:anywhere}
 .hero{margin:6px 0 26px}
 figure{margin:18px 0 24px}
-figcaption,.caption,.source{font-size:11px;line-height:1.55}
+figcaption,.caption,.source{font-size:14px;line-height:1.6}
 .hero figcaption{margin-top:10px}
 .caption{margin:4px 0 18px}
 
 
 
-blockquote{font-size:18px;line-height:1.55;padding:12px 18px;margin-bottom:20px}
+blockquote{font-size:21px;line-height:1.55;padding:12px 18px;margin-bottom:20px}
 .gallery{gap:18px 14px;margin:18px 0 14px}
-.gallery figcaption{font-size:10.5px;line-height:1.55;margin-top:8px}
+.gallery figcaption{font-size:13px;line-height:1.55;margin-top:8px}
 .table-wrap{margin:20px 0 14px}
-table{font-size:12px;line-height:1.55}
+table{font-size:15px;line-height:1.55}
 th{padding:11px 13px}td{padding:12px 13px}
 .chart{padding:18px 0 12px;margin:16px 0 24px}
-.source{padding-top:18px;margin-top:24px}
+.source{padding-top:18px;margin-top:24px;font-size:15px;line-height:1.6}
+h3.source{font-size:20px;font-weight:700;overflow-wrap:anywhere}
 @media(max-width:600px){
 main{padding-top:24px;padding-bottom:44px}
-h1{font-size:27px}h2{font-size:20px;margin-top:32px}
-p,li{font-size:15.5px;line-height:1.6;margin-bottom:14px}
-.eyebrow{font-size:9px}.byline{font-size:11px;line-height:1.6}
+h1{font-size:29px}h2{font-size:22px;margin-top:34px}
+p,li{font-size:17px;line-height:1.65;margin-bottom:14px}
+.eyebrow{font-size:10px}.byline{font-size:16px;line-height:1.6}.source{font-size:13.5px}h3.source{font-size:17px}figcaption,.caption{font-size:13px}table{font-size:13px}
 
-blockquote{font-size:16px}th,td{padding:10px}
+blockquote{font-size:18px}th,td{padding:10px}
 }
 @media(max-width:440px){h1{font-size:24px}}
 @media(max-width:700px){.review-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.review-flow>div{border-bottom:1px solid var(--line)}.review-flow>div:nth-child(2n){border-right:0}.review-flow>div:nth-last-child(-n+2){border-bottom:0}}
@@ -153,7 +154,7 @@ video{max-height:300px}.gallery{break-inside:avoid}h2{break-after:avoid}.image-b
 .capability-grid section{padding:18px 16px;border-right:1px solid var(--line)}
 .capability-grid section:last-child{border-right:0}
 .harness-figure h3{font-family:var(--serif);font-size:20px;font-weight:500;line-height:1.2;margin:8px 0 14px}
-.harness-figure p{font-size:13px;line-height:1.55;margin:0 0 13px}
+.harness-figure p{font-size:15px;line-height:1.55;margin:0 0 13px}
 .harness-figure p:last-child{margin-bottom:0}
 .harness-figure .figure-kicker,.harness-flow span{font-size:10px;letter-spacing:.045em;text-transform:uppercase;color:#71664f;font-weight:600}
 .capability-grid section:nth-child(2){background:#f4f6f0}
@@ -162,14 +163,14 @@ video{max-height:300px}.gallery{break-inside:avoid}h2{break-after:avoid}.image-b
 .harness-flow>div:nth-child(3n){border-right:0}
 .harness-flow>div:nth-child(n+4){border-bottom:0}
 .harness-flow h3{font-size:19px}
-.feedback-strip{padding:13px 16px;background:#f4f6f0;border-top:1px solid var(--line);font-size:12px;line-height:1.6}
+.feedback-strip{padding:13px 16px;background:#f4f6f0;border-top:1px solid var(--line);font-size:14px;line-height:1.6}
 @media(max-width:760px){.capability-grid,.harness-flow{grid-template-columns:1fr}.capability-grid section,.harness-flow>div{border-right:0;border-bottom:1px solid var(--line)}.harness-flow>div:nth-child(n+4){border-bottom:1px solid var(--line)}.capability-grid section:last-child,.harness-flow>div:last-child{border-bottom:0}}
 
-.research-question{margin:32px 0;padding:34px 38px 38px;border:1px solid #b8cdd3;border-left:5px solid #365c68;background:linear-gradient(120deg,#edf4f8,#f5f8f7);border-radius:12px;box-shadow:0 5px 18px rgba(41,63,72,.06)}.research-question .question-label{display:block;margin-bottom:14px;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#547782}.research-question p{margin:0;font-family:var(--serif);font-size:18px;line-height:1.5;font-weight:500;letter-spacing:-.015em;color:#233e49}@media(max-width:600px){.research-question{padding:26px 22px}.research-question p{font-size:17px}}
+.research-question{margin:32px 0;padding:34px 38px 38px;border:1px solid #b8cdd3;border-left:5px solid #365c68;background:linear-gradient(120deg,#edf4f8,#f5f8f7);border-radius:12px;box-shadow:0 5px 18px rgba(41,63,72,.06)}.research-question .question-label{display:block;margin-bottom:14px;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#547782}.research-question p{margin:0;font-family:var(--serif);font-size:21px;line-height:1.5;font-weight:500;letter-spacing:-.015em;color:#233e49}@media(max-width:600px){.research-question{padding:26px 22px}.research-question p{font-size:17px}}
 </style></head><body id="top"><div class="masthead"><span>Open Gemini Harness / Experiment notes</span><a href="https://github.com/ehehee/open-gemini-robot-harness">Code ↗</a></div><nav class="section-nav" aria-label="Article sections"><div><a href="#background" title="Background"><span class="dot"></span><span class="lbl">Background</span></a><a href="#the-setup" title="Setup"><span class="dot"></span><span class="lbl">Setup</span></a><a href="#the-open-harness" title="Open harness"><span class="dot"></span><span class="lbl">Open harness</span></a><a href="#the-clamp-handover" title="Clamp handover"><span class="dot"></span><span class="lbl">Clamp handover</span></a><a href="#four-objects-six-development-runs" title="Experiments"><span class="dot"></span><span class="lbl">Experiments</span></a><a href="#failures-and-recovery" title="Failures"><span class="dot"></span><span class="lbl">Failures</span></a><a href="#runtime" title="Runtime"><span class="dot"></span><span class="lbl">Runtime</span></a><a href="#human-review-and-the-execution-pipeline" title="Human review"><span class="dot"></span><span class="lbl">Human review</span></a></div></nav><main>
 <header><p class="eyebrow">A robotics case study · October 2026</p>
 <h1>Open Gemini 4 Argon Robot Harness<br>A Zero-Shot Bimanual Handover Case Study</h1>
-<p class="byline">by Shuangyu Xie, Oct 20, 2026 <span aria-hidden="true">—</span> Code: <a href="https://github.com/ehehee/open-gemini-robot-harness">open-gemini-robot-harness</a></p>
+<p class="byline">by Shuangyu Xie, Oct 20, 2026<br>Code: <a href="https://github.com/ehehee/open-gemini-robot-harness">https://github.com/ehehee/open-gemini-robot-harness</a></p>
 </header>
 
 <h2 id="background">Background</h2>
@@ -256,31 +257,6 @@ EACH TURN     + latest observation   →   one plan</code></pre>
 </video>
 <figcaption>A 40-second walkthrough of pickup, transfer, verification, release, and placement, with the recorded overhead and wrist references. Footage speeds are labeled; reference images are aligned by stage, not synchronized frame by frame.</figcaption></figure>
 
-<h2 id="four-objects-six-development-runs">Four objects, six development runs</h2>
-<p>The handover runs used a tape roll, a plastic spring clamp with red tips, a metal spring clamp, and a computer fan. The tape and metal clamp were successfully transferred and placed. The other two objects did not produce a confirmed complete episode.</p>
-<div class="gallery cols-4"><figure><button class="image-button" type="button" aria-label="Enlarge image: Tape roll — successful transfer and placement after a retry."><img loading="lazy" src="images/img_16.jpg" alt="Tape roll — successful transfer and placement after a retry."><span class="outcome-mark ok" title="Succeeded" aria-label="Succeeded">✓</span></button><figcaption>Tape roll — successful transfer and placement after a retry.</figcaption></figure><figure><button class="image-button" type="button" aria-label="Enlarge image: Plastic clamp — receiver lost its grip after release; final placement unconfirmed."><img loading="lazy" src="images/img_17.jpg" alt="Plastic clamp — receiver lost its grip after release; final placement unconfirmed."><span class="outcome-mark fail" title="Failed" aria-label="Failed">✗</span></button><figcaption>Plastic clamp — receiver lost its grip after release; final placement unconfirmed.</figcaption></figure><figure><button class="image-button" type="button" aria-label="Enlarge image: Metal clamp — successful transfer and placement in the final run."><img loading="lazy" src="images/img_18.jpg" alt="Metal clamp — successful transfer and placement in the final run."><span class="outcome-mark ok" title="Succeeded" aria-label="Succeeded">✓</span></button><figcaption>Metal clamp — successful transfer and placement in the final run.</figcaption></figure><figure><button class="image-button" type="button" aria-label="Enlarge image: Computer fan — repeated slips from its thin frame."><img loading="lazy" src="images/img_19.jpg" alt="Computer fan — repeated slips from its thin frame."><span class="outcome-mark fail" title="Failed" aria-label="Failed">✗</span></button><figcaption>Computer fan — repeated slips from its thin frame.</figcaption></figure></div>
-<p>The table covers six development runs. The harness and prompts changed between runs, so these are case studies rather than a controlled success-rate benchmark. Three additional sessions ended on hardware faults—a gripper encoder fault, an overhead-camera USB failure, and a motor over-temperature trip—and are outside this table.</p>
-<div class="table-wrap"><table><thead><tr><th>Run</th><th>Object</th><th>Turns</th><th>Duration</th><th>Outcome</th></tr></thead><tbody>
-<tr><td>1</td><td>Tape roll</td><td>30</td><td>≈20m 26s</td><td>Success after a dropped transfer and re-pick.</td></tr>
-<tr><td>2</td><td>Fan</td><td>2</td><td>3m 31s</td><td>Stopped before motion to add response-length limits.</td></tr>
-<tr><td>3</td><td>Fan</td><td>20</td><td>12m 45s</td><td>Three slips from the thin frame; stopped.</td></tr>
-<tr><td>4</td><td>Plastic clamp</td><td>26</td><td>19m 27s</td><td>Receiver lost the clamp after release; subsequent placement unconfirmed.</td></tr>
-<tr><td>5</td><td>Metal clamp</td><td>11</td><td>9m 53s</td><td>Malformed API response crashed the agent.</td></tr>
-<tr><td>6</td><td>Metal clamp</td><td>18</td><td>8m 23s</td><td>Successful transfer and placement, with no drops.</td></tr>
-</tbody></table></div>
-<p class="caption">Durations follow the source report: time to completion for successful runs, session length for unsuccessful runs. Tape timing comes from its transcript because that version did not record an event log.</p>
-
-<h2 id="failures-and-recovery">Failures and recovery</h2>
-<details class="fold"><summary>Show how the tape, plastic-clamp, fan, and API failures happened, and what changed</summary>
-<p>The tape run completed after two transfer attempts. In the first, the receiving gripper missed the rim. Its opening eventually fell to approximately 0.003, while the early harness still reported it as holding. The giving arm released and the tape fell. Gemini then re-picked the tape, changed the transfer pose, and completed the second attempt.</p>
-<div class="gallery cols-3"><figure><button class="image-button" type="button" aria-label="Enlarge image: 1 · Locate the tape and destination tray."><img loading="lazy" src="images/img_01.jpg" alt="1 · Locate the tape and destination tray."></button><figcaption>1 · Locate the tape and destination tray.</figcaption></figure><figure><button class="image-button" type="button" aria-label="Enlarge image: 2 · Pick up the tape through its rim."><img loading="lazy" src="images/img_02.jpg" alt="2 · Pick up the tape through its rim."></button><figcaption>2 · Pick up the tape through its rim.</figcaption></figure><figure><button class="image-button" type="button" aria-label="Enlarge image: 3 · The first transfer fails; the tape is back on the table."><img loading="lazy" src="images/img_03.jpg" alt="3 · The first transfer fails; the tape is back on the table."></button><figcaption>3 · The first transfer fails; the tape is back on the table.</figcaption></figure><figure><button class="image-button" type="button" aria-label="Enlarge image: 4 · Retry with the grippers on opposite sides of the ring."><img loading="lazy" src="images/img_04.jpg" alt="4 · Retry with the grippers on opposite sides of the ring."></button><figcaption>4 · Retry with the grippers on opposite sides of the ring.</figcaption></figure><figure><button class="image-button" type="button" aria-label="Enlarge image: 5 · Release the giver; the receiver keeps the tape."><img loading="lazy" src="images/img_05.jpg" alt="5 · Release the giver; the receiver keeps the tape."></button><figcaption>5 · Release the giver; the receiver keeps the tape.</figcaption></figure><figure><button class="image-button" type="button" aria-label="Enlarge image: 6 · Place the tape inside the tray."><img loading="lazy" src="images/img_06.jpg" alt="6 · Place the tape inside the tray."></button><figcaption>6 · Place the tape inside the tray.</figcaption></figure></div>
-<p class="caption">The tape run exposes the recovery loop: initial grasp, failed transfer, re-pick, another transfer, and successful placement.</p>
-<p>The plastic clamp failed during release as well. The receiver grasped a narrow red tip and lost the object about 0.4 seconds after the giver opened. The object was re-picked, but the final placement was unclear, so this run is not counted as a success. In the fan run, the thin frame slipped from the gripper three times during carrying.</p>
-<p>These observations motivated two changes: rechecking holding after each step, including on the arm that did not move, and making release conditional on a separate observation of the receiving grasp. The prompt also specified grasping a substantial part of the object and carrying with adequate clearance at low speed. The final clamp run followed the revised protocol and completed its first transfer without a drop. Since the object and other parts of the setup also changed, this does not isolate the protocol’s contribution.</p>
-<p>A different failure occurred in the earlier metal-clamp run. A malformed API response crashed the agent, and shutdown released the arms. I added API retries and changed the failure handling so that an agent crash would leave the arms powered. This run is included in the table because it prevented task completion, although it was not a manipulation failure.</p>
-<p>The tape and final clamp runs took 30 and 18 turns, respectively. The earlier tape run had no wrist image, holding recheck, or explicit handover protocol, and it also produced four replies without a valid command and two cut-off replies. The final clamp run produced neither type of malformed turn. Several settings changed together, so I treat this as a record of development rather than an ablation.</p>
-</details>
-
 <h2 id="runtime">Runtime</h2>
 <p>The successful clamp session took <strong>502.7 seconds</strong> from session start to <code>done</code>. I separated the time using the recorded API calls and execution events:</p>
 <div class="table-wrap"><table><thead><tr><th>Component</th><th>Time</th><th>Share</th></tr></thead><tbody>
@@ -325,13 +301,39 @@ aria-label="Response times for all 18 calls; five were within ten seconds.">
 </figure>
 <p>A composite action such as <code>grasp</code> expands into opening, approaching, descending, closing, and lifting. Each motion or gripper segment can be reviewed separately. Before the next segment, the harness reads the actual robot state and recomputes the remaining previews. For a parallel step, both arms’ motions are reviewed together.</p>
 <p>The Viser interface displays the current robot pose, the proposed pose and path, and the camera point clouds. The operator can inspect reachability, clearance, and the placement of the grippers relative to the visible scene. The point cloud remains a visualization aid; Gemini receives the resulting status and camera observations, not that 3D display.</p>
-<p>When a segment is rejected, the model receives a status and a short reason. For example, the clamp run included <code>IK fails</code> and <code>left arm would collide, change grasp pose</code>. Gemini then proposed a different pose. In the successful run, the event log recorded 23 decisions: 18 approvals and five rejections, accounting for 154.4 seconds of review time.</p>
 <p>The newer verifier automates part of this gate by checking motion feasibility and returning <code>OK</code>, <code>IK_FAILURE</code>, or <code>COLLISION</code>. It does not establish that the receiving grasp can support the object after release. The separate observation before release and the holding recheck remain relevant even when motion approval is automated.</p>
-<p>The remaining questions concern repeatability. There is one successful final metal-clamp episode here, and the six-run series used an evolving harness. It does not establish a success rate across resets, object poses, or new objects. A useful next evaluation would fix the harness, repeat each object from varied initial poses, and report transfer success, final placement, drops, rejected motions, and wall-clock time separately.</p>
-<p>For now, the result is a working implementation and a set of recorded successes and failures. The code and detailed run records are linked below.</p>
-<p class="source">Code: <a href="https://github.com/ehehee/open-gemini-robot-harness">open-gemini-robot-harness</a>.
-Detailed experiment reference: <a href="https://claude.ai/artifact/RcXUWDF4b2Yfax4y1HcG15">handover report</a>.
-This article uses the report’s original camera images and the recorded metal-clamp episode.</p>
+
+
+<h2 id="four-objects-six-development-runs">More objects and runs</h2>
+<p>The handover runs used a tape roll, a plastic spring clamp with red tips, a metal spring clamp, and a computer fan. The tape and metal clamp were successfully transferred and placed. The other two objects did not produce a confirmed complete episode.</p>
+<div class="gallery cols-4"><figure><button class="image-button" type="button" aria-label="Enlarge image: Tape roll — successful transfer and placement after a retry."><img loading="lazy" src="images/img_16.jpg" alt="Tape roll — successful transfer and placement after a retry."><span class="outcome-mark ok" title="Succeeded" aria-label="Succeeded">✓</span></button><figcaption>Tape roll — successful transfer and placement after a retry.</figcaption></figure><figure><button class="image-button" type="button" aria-label="Enlarge image: Plastic clamp — receiver lost its grip after release; final placement unconfirmed."><img loading="lazy" src="images/img_17.jpg" alt="Plastic clamp — receiver lost its grip after release; final placement unconfirmed."><span class="outcome-mark fail" title="Failed" aria-label="Failed">✗</span></button><figcaption>Plastic clamp — receiver lost its grip after release; final placement unconfirmed.</figcaption></figure><figure><button class="image-button" type="button" aria-label="Enlarge image: Metal clamp — successful transfer and placement in the final run."><img loading="lazy" src="images/img_18.jpg" alt="Metal clamp — successful transfer and placement in the final run."><span class="outcome-mark ok" title="Succeeded" aria-label="Succeeded">✓</span></button><figcaption>Metal clamp — successful transfer and placement in the final run.</figcaption></figure><figure><button class="image-button" type="button" aria-label="Enlarge image: Computer fan — repeated slips from its thin frame."><img loading="lazy" src="images/img_19.jpg" alt="Computer fan — repeated slips from its thin frame."><span class="outcome-mark fail" title="Failed" aria-label="Failed">✗</span></button><figcaption>Computer fan — repeated slips from its thin frame.</figcaption></figure></div>
+<p>The table covers six development runs. The harness and prompts changed between runs, so these are case studies rather than a controlled success-rate benchmark. Three additional sessions ended on hardware faults—a gripper encoder fault, an overhead-camera USB failure, and a motor over-temperature trip—and are outside this table.</p>
+<div class="table-wrap"><table><thead><tr><th>Run</th><th>Object</th><th>Turns</th><th>Duration</th><th>Outcome</th></tr></thead><tbody>
+<tr><td>1</td><td>Tape roll</td><td>30</td><td>≈20m 26s</td><td>Success after a dropped transfer and re-pick.</td></tr>
+<tr><td>2</td><td>Fan</td><td>2</td><td>3m 31s</td><td>Stopped before motion to add response-length limits.</td></tr>
+<tr><td>3</td><td>Fan</td><td>20</td><td>12m 45s</td><td>Three slips from the thin frame; stopped.</td></tr>
+<tr><td>4</td><td>Plastic clamp</td><td>26</td><td>19m 27s</td><td>Receiver lost the clamp after release; subsequent placement unconfirmed.</td></tr>
+<tr><td>5</td><td>Metal clamp</td><td>11</td><td>9m 53s</td><td>Malformed API response crashed the agent.</td></tr>
+<tr><td>6</td><td>Metal clamp</td><td>18</td><td>8m 23s</td><td>Successful transfer and placement, with no drops.</td></tr>
+</tbody></table></div>
+<p class="caption">Durations follow the source report: time to completion for successful runs, session length for unsuccessful runs. Tape timing comes from its transcript because that version did not record an event log.</p>
+
+
+<h2 id="failures-and-recovery">Failures and recovery</h2>
+<details class="fold"><summary>Show how the tape, plastic-clamp, fan, and API failures happened, and what changed</summary>
+<p>The tape run completed after two transfer attempts. In the first, the receiving gripper missed the rim. Its opening eventually fell to approximately 0.003, while the early harness still reported it as holding. The giving arm released and the tape fell. Gemini then re-picked the tape, changed the transfer pose, and completed the second attempt.</p>
+<div class="gallery cols-3"><figure><button class="image-button" type="button" aria-label="Enlarge image: 1 · Locate the tape and destination tray."><img loading="lazy" src="images/img_01.jpg" alt="1 · Locate the tape and destination tray."></button><figcaption>1 · Locate the tape and destination tray.</figcaption></figure><figure><button class="image-button" type="button" aria-label="Enlarge image: 2 · Pick up the tape through its rim."><img loading="lazy" src="images/img_02.jpg" alt="2 · Pick up the tape through its rim."></button><figcaption>2 · Pick up the tape through its rim.</figcaption></figure><figure><button class="image-button" type="button" aria-label="Enlarge image: 3 · The first transfer fails; the tape is back on the table."><img loading="lazy" src="images/img_03.jpg" alt="3 · The first transfer fails; the tape is back on the table."></button><figcaption>3 · The first transfer fails; the tape is back on the table.</figcaption></figure><figure><button class="image-button" type="button" aria-label="Enlarge image: 4 · Retry with the grippers on opposite sides of the ring."><img loading="lazy" src="images/img_04.jpg" alt="4 · Retry with the grippers on opposite sides of the ring."></button><figcaption>4 · Retry with the grippers on opposite sides of the ring.</figcaption></figure><figure><button class="image-button" type="button" aria-label="Enlarge image: 5 · Release the giver; the receiver keeps the tape."><img loading="lazy" src="images/img_05.jpg" alt="5 · Release the giver; the receiver keeps the tape."></button><figcaption>5 · Release the giver; the receiver keeps the tape.</figcaption></figure><figure><button class="image-button" type="button" aria-label="Enlarge image: 6 · Place the tape inside the tray."><img loading="lazy" src="images/img_06.jpg" alt="6 · Place the tape inside the tray."></button><figcaption>6 · Place the tape inside the tray.</figcaption></figure></div>
+<p class="caption">The tape run exposes the recovery loop: initial grasp, failed transfer, re-pick, another transfer, and successful placement.</p>
+<p>The plastic clamp failed during release as well. The receiver grasped a narrow red tip and lost the object about 0.4 seconds after the giver opened. The object was re-picked, but the final placement was unclear, so this run is not counted as a success. In the fan run, the thin frame slipped from the gripper three times during carrying.</p>
+<p>These observations motivated two changes: rechecking holding after each step, including on the arm that did not move, and making release conditional on a separate observation of the receiving grasp. The prompt also specified grasping a substantial part of the object and carrying with adequate clearance at low speed. The final clamp run followed the revised protocol and completed its first transfer without a drop. Since the object and other parts of the setup also changed, this does not isolate the protocol’s contribution.</p>
+<p>A different failure occurred in the earlier metal-clamp run. A malformed API response crashed the agent, and shutdown released the arms. I added API retries and changed the failure handling so that an agent crash would leave the arms powered. This run is included in the table because it prevented task completion, although it was not a manipulation failure.</p>
+<p>The tape and final clamp runs took 30 and 18 turns, respectively. The earlier tape run had no wrist image, holding recheck, or explicit handover protocol, and it also produced four replies without a valid command and two cut-off replies. The final clamp run produced neither type of malformed turn. Several settings changed together, so I treat this as a record of development rather than an ablation.</p>
+</details>
+
+
+
+<h3 class="source">More detail can be found in the code: <a href="https://github.com/ehehee/open-gemini-robot-harness">https://github.com/ehehee/open-gemini-robot-harness</a>
+</h3>
 </main><footer class="page-footer"><span>Open Gemini Harness · October 2026</span><a href="#top">Back to top ↑</a></footer>
 <dialog id="image-viewer" aria-labelledby="image-caption">
 <div class="lightbox-bar"><p id="image-caption"></p><button type="button" id="close-viewer">Close ×</button></div>
