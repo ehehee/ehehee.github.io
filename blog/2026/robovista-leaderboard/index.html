@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>RoboVista leaderboard is online — see how VLMs stack up on real robot tasks 🏆 | Shuangyu  Xie</title>
+    <title>RoboVista leaderboard update: Gemini 4 Argon leads at 81.3% 🏆 | Shuangyu  Xie</title>
     <meta name="author" content="Shuangyu  Xie">
-    <meta name="description" content="">
+    <meta name="description" content="The October 2026 RoboVista update: 30 VLMs evaluated on real robot tasks, led by Gemini 4 Argon.">
 
 
     <!-- Bootstrap & MDB -->
@@ -119,8 +119,8 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">RoboVista leaderboard is online — see how VLMs stack up on real robot tasks 🏆</h1>
-    <p class="post-meta">July 6, 2026</p>
+    <h1 class="post-title">RoboVista leaderboard update: Gemini 4 Argon leads at 81.3% 🏆</h1>
+    <p class="post-meta">October 15, 2026</p>
     <p class="post-tags">
       <a href="/blog/2026"> <i class="fas fa-calendar fa-sm"></i> 2026 </a>
 
@@ -128,7 +128,102 @@
   </header>
 
   <article class="post-content">
-    <p>The <a href="https://berkeleyautomation.github.io/robovista/leaderboard.html" rel="external nofollow noopener" target="_blank">RoboVista leaderboard</a> is now online, tracking how Vision-Language Models perform across diverse real-world robot applications. The benchmark is also available on <a href="https://huggingface.co/datasets/sy-xie/robovista" rel="external nofollow noopener" target="_blank">Hugging Face</a>.</p>
+    <p>The <a href="https://berkeleyautomation.github.io/robovista/leaderboard.html" rel="external nofollow noopener" target="_blank">RoboVista leaderboard</a> has been updated (2026-10-15) and now covers <strong>30 models</strong> (23 open-weight, 7 API) on 460 multiple-choice spatial-reasoning questions over real robot scenes, each run with a standard and (for most) a chain-of-thought prompt. The benchmark is available on <a href="https://huggingface.co/datasets/sy-xie/robovista" rel="external nofollow noopener" target="_blank">Hugging Face</a>.</p>
+
+<p><strong>Gemini 4 Argon is the new top model at 81.3%</strong>, ahead of GPT-6 Astra and Claude Fable 5.1, at the lowest evaluation cost of the three. Compared with Gemini 3 Flash, it improves in every robotics domain. (<a href="https://x.com/Shuangyu0_0Xie/status/2110772438619308517" rel="external nofollow noopener" target="_blank">Announcement on X</a>)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Weights</th>
+      <th>Standard</th>
+      <th>CoT</th>
+      <th>Scene</th>
+      <th>Planning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gemini-4-argon</td>
+      <td>API</td>
+      <td><strong>81.3</strong></td>
+      <td>81.3</td>
+      <td>80.7</td>
+      <td>81.8</td>
+    </tr>
+    <tr>
+      <td>gpt-6-astra</td>
+      <td>API</td>
+      <td>75.0</td>
+      <td>73.9</td>
+      <td>74.5</td>
+      <td>75.7</td>
+    </tr>
+    <tr>
+      <td>gemini-3-flash-preview</td>
+      <td>API</td>
+      <td>68.9</td>
+      <td>65.4</td>
+      <td>69.9</td>
+      <td>67.6</td>
+    </tr>
+    <tr>
+      <td>claude-fable-5.1</td>
+      <td>API</td>
+      <td>63.9</td>
+      <td>—</td>
+      <td>65.0</td>
+      <td>60.8</td>
+    </tr>
+    <tr>
+      <td>qwen3.5-397b-a17b</td>
+      <td>open</td>
+      <td>55.2</td>
+      <td>52.8</td>
+      <td>58.2</td>
+      <td>48.6</td>
+    </tr>
+    <tr>
+      <td>gpt-5-0</td>
+      <td>API</td>
+      <td>54.6</td>
+      <td>54.6</td>
+      <td>56.2</td>
+      <td>51.4</td>
+    </tr>
+    <tr>
+      <td>qwen3.6-27b</td>
+      <td>open</td>
+      <td>53.5</td>
+      <td>54.4</td>
+      <td>55.9</td>
+      <td>48.0</td>
+    </tr>
+    <tr>
+      <td>gemma4-31b</td>
+      <td>open</td>
+      <td>51.5</td>
+      <td>55.4</td>
+      <td>54.9</td>
+      <td>43.9</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Top 8 by standard-prompt accuracy (%). The best open-weight model is qwen3.5-397b-a17b at 55.2%. See the <a href="https://berkeleyautomation.github.io/robovista/leaderboard.html" rel="external nofollow noopener" target="_blank">full leaderboard</a> for all 30 models and the per-domain breakdown.</p>
+
+<div class="row mt-3">
+  <div class="col-sm-6 mt-3 mt-md-0">
+    <img class="img-fluid rounded" src="/assets/img/robovista/argon-accuracy-cost.jpg" alt="Accuracy versus total eval cost: Gemini-4 Argon, GPT-6 Astra, Claude Fable 5.1" loading="lazy">
+  </div>
+  <div class="col-sm-6 mt-3 mt-md-0">
+    <img class="img-fluid rounded" src="/assets/img/robovista/gemini4-vs-gemini3-domains.jpg" alt="Gemini 4 Argon versus Gemini 3 Flash accuracy in each robotics domain" loading="lazy">
+  </div>
+</div>
+<div class="caption">
+  Charts from the announcement on X. They were made before the leaderboard's answer re-parsing, so their scores are a few tenths of a point higher (e.g. 81.9% vs. 81.3% for Gemini 4 Argon).
+</div>
 
   </article>
 </div>
