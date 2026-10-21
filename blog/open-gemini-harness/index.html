@@ -134,6 +134,8 @@ th{padding:11px 13px}td{padding:12px 13px}
 .chart{padding:18px 0 12px;margin:16px 0 24px}
 .source{padding-top:18px;margin-top:24px;font-size:15px;line-height:1.6}
 h3.source{font-size:20px;font-weight:700;overflow-wrap:anywhere}
+.references p{margin:0 0 8px}.references ol{margin:0;padding-left:1.4em}.references li{font-size:15px;line-height:1.6;margin:0}
+h3.source+.references{border-top:0;padding-top:0;margin-top:20px}
 @media(max-width:600px){
 main{padding-top:24px;padding-bottom:44px}
 h1{font-size:29px}h2{font-size:22px;margin-top:34px}
@@ -174,14 +176,14 @@ video{max-height:300px}.gallery{break-inside:avoid}h2{break-after:avoid}.image-b
 </header>
 
 <h2 id="background">Background</h2>
-<p>Google released its <a href="https://developers.googleblog.com/gemini-4-argon-for-robotics/">Gemini 4 Argon robotics report</a> on October 13. It included demonstrations of robot control, simulation reconstruction, and physical reasoning. I was particularly interested in the zero-shot manipulation example, where Argon used camera images and motion primitives to upright a mug and place a napkin inside it.</p>
+<p>Google released its <a href="https://developers.googleblog.com/gemini-4-argon-for-robotics/">Gemini 4 Argon robotics report</a> on October 13. It included demonstrations of robot control, simulation reconstruction, and physical reasoning. I was particularly interested in the zero-shot manipulation example, where Argon used camera images and motion primitives to upright a mug and place a napkin inside it. After I tested it myself on <a href="https://berkeleyautomation.github.io/robovista/leaderboard.html">RoboVista</a>, our benchmark of robotics reasoning questions from real robot deployments, Gemini 4 Argon is the strongest model we evaluated at 81.3%, ahead of GPT-6 Astra (75.0%) and Claude Fable 5.1 (63.9%), and it improved on Gemini 3 Flash in every robotics domain [1] (<a href="/blog/2026/robovista-leaderboard/">leaderboard update</a>).</p>
 <figure class="hero">
 <video controls playsinline preload="none" poster="images/google-zero-shot.jpg" aria-label="Google's zero-shot mug and napkin manipulation demonstration">
 <source src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/original_videos/yam_control.mp4" type="video/mp4">
 </video>
 <figcaption>Google’s zero-shot manipulation example. The external camera view is on the left; the calibrated wrist view, coordinate grid, and jaw reticle are on the right. Video: <a href="https://developers.googleblog.com/gemini-4-argon-for-robotics/">Google, Gemini 4 Argon for Robotics</a>.</figcaption>
 </figure>
-<p>The interface separates visual target selection from coordinate conversion. Gemini chooses an image location and a height; the harness converts them into a robot-frame target and checks the motion before execution.</p>
+<p>From google's post, I found that its interface separates visual target selection from coordinate conversion. Gemini chooses an image location and a height; the harness converts them into a robot-frame target and checks the motion before execution.</p>
 <figure class="diagram-figure"><button class="image-button" type="button" aria-label="Enlarge image-to-motion pipeline"><img src="images/deprojection-pipeline.png" alt="Image-to-Action Pipeline: Grid overlay → Gemini query → Deproject → Execute" loading="lazy"></button><figcaption>Image-to-Action Pipeline: from camera observation to robot motion. <a href="images/deprojection-pipeline.svg">Vector version ↗</a></figcaption></figure>
 <ol>
 <li><strong>Grid overlay.</strong> The camera captures an RGB image. The harness uses camera calibration and measured robot state to draw the coordinate grid and gripper markers on it.</li>
@@ -334,6 +336,7 @@ aria-label="Response times for all 18 calls; five were within ten seconds.">
 
 <h3 class="source">More detail can be found in the code: <a href="https://github.com/ehehee/open-gemini-robot-harness">https://github.com/ehehee/open-gemini-robot-harness</a>
 </h3>
+<section class="source references"><p><strong>References</strong></p><ol><li>Shuangyu Xie*, Kaiyuan Chen*, Ziyang Chen, Simeon Adebola, Yixuan Huang, Zehan Ma, Tianshuang Qiu, Wentao Yuan, Dhruv Shah, Pannag R. Sanketi, Ken Goldberg. “<a href="https://berkeleyautomation.github.io/robovista/">RoboVista: Evaluating Vision Language Models for Diverse Robot Applications</a>.” <em>Robotics: Science and Systems (RSS)</em>, 2026. <a href="https://berkeleyautomation.github.io/robovista/leaderboard.html">Leaderboard</a>, updated 2026-10-15.</li></ol></section>
 </main><footer class="page-footer"><span>Open Gemini Harness · October 2026</span><a href="#top">Back to top ↑</a></footer>
 <dialog id="image-viewer" aria-labelledby="image-caption">
 <div class="lightbox-bar"><p id="image-caption"></p><button type="button" id="close-viewer">Close ×</button></div>
