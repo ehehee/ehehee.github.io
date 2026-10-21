@@ -1,0 +1,42 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.000
+Pick up the clamp with the nearest arm,
+transfer it to the other arm, then place it in the blue bin.
+
+00:00:02.000 --> 00:00:05.167
+The right arm grasps near the base of a handle
+and lifts the clamp from the table.
+
+00:00:05.167 --> 00:00:09.334
+Early proposals were rejected for IK or collision.
+Gemini revised the approach to a tilted receiving grasp.
+
+00:00:09.333 --> 00:00:18.333
+Turn 9: the left gripper closes on the exposed handle.
+The right gripper continues holding the clamp.
+
+00:00:18.333 --> 00:00:20.833
+Turn 10: request a fresh observation and inspect the grip.
+Release is kept separate from the next movement.
+
+00:00:20.833 --> 00:00:26.833
+Turn 11: open the right gripper in a separate plan.
+The left gripper retains the clamp.
+
+00:00:26.833 --> 00:00:29.500
+Recheck holding, then move the giving arm away.
+Receiver opening stays near 0.18 after release.
+
+00:00:29.500 --> 00:00:32.500
+The receiving arm carries the clamp to the bin
+and aligns it for placement.
+
+00:00:32.500 --> 00:00:35.667
+Release the clamp inside the blue bin.
+Both arms return home.
+
+00:00:35.667 --> 00:00:39.667
+18 model turns | 18 executed segments | no drops
+502.7 s total: 267.9 s inference, 154.4 s review, 46.3 s motion.
+
