@@ -92,6 +92,73 @@ body.sticky-bottom-footer {
   }
 }
 
+// CoRL 2026 presentations on the homepage
+.section-block.corl-section {
+  border: 2px solid var(--global-text-color);
+}
+
+.corl-section {
+  .section-title { font-size: 21px; }
+  .corl-lead { color: var(--global-text-color-2); margin-bottom: 14px; }
+  .chip-row { margin-bottom: 0; }
+}
+
+.corl-talk {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  padding: 14px 0;
+  border-top: 1px solid var(--global-ring-color);
+
+  &:last-child { padding-bottom: 4px; }
+
+  .corl-media { display: block; }
+
+  video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 6px;
+    background: var(--global-ring-color);
+  }
+
+  h3 {
+    font-family: $font-heading;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 8px;
+    a { color: var(--global-text-color); }
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+}
+
+.corl-sessions {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+
+  li { display: flex; flex-wrap: wrap; gap: 0 10px; margin: 0 0 3px; font-size: 15px; }
+  .when { font-weight: 600; color: var(--global-text-color); }
+  .what { color: var(--global-text-color-2); }
+  b { font-weight: 700; }
+  .oral { color: #15803d; }
+  .spot { color: var(--global-theme-color); }
+}
+
+.corl-section .lbr { color: #2563eb; font-weight: 700; }
+
+html[data-theme="dark"] {
+  .corl-section .lbr { color: #60a5fa; }
+  .corl-sessions .oral { color: #4ade80; }
+}
+
 // Contact chips (mono bordered pills, robovista style)
 .chip-row {
   display: flex;
